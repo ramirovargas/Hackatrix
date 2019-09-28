@@ -28,14 +28,15 @@ SELECT * FROM users;
 -- agro TABLE
 CREATE TABLE agro (
   id INT(11) NOT NULL,
-  nombre VARCHAR(150) NOT NULL,
-  categoria VARCHAR(255) NOT NULL,
-  lugar TEXT,
+  product_name VARCHAR(150) NOT NULL,
+  product_description VARCHAR(255) NOT NULL,
+  product_location VARCHAR(200),
+  quantity INT (10),
+  product_category VARCHAR(50),
+  initial_value INT (15),
   user_id INT(11),
-  direccion VARCHAR(255),
   startdate timestamp NOT NULL,
   endate timestamp NOT NULL DEFAULT current_timestamp,
-  tipo BOOLEAN,
   CONSTRAINT fk_user FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
