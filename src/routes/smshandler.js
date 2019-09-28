@@ -34,7 +34,7 @@ router.post('/registraroferta', (req, res) => {
     // Show result as JSON
     client.json(parameter, callback)
     //twiml.message('The Robots are coming! Head for the hills!');
-
+    // 2056193140 - papa:paipa:100:30000:2019-05-10#
     // res.writeHead(200, {'Content-Type': 'text/xml'});
     // res.end(twiml.toString());
 });
