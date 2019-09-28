@@ -9,9 +9,13 @@
 * npm run dev
 
 # Codigo subido a AWS 
-35.162.225.47:8080
+
+![alt text](35.162.225.47:8080)
+
 Dar click en Sign in
+
 Usuario: ludwing.ra@gmail.com
 Password: lud123
+
 
 
