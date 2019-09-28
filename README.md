@@ -4,10 +4,11 @@
 ![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/agrtech.png)
 ![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/image.png)
 
-#Manual de usuario
+# Manual de usuario
+## Requisito NodeJS
 * git clone el proyecto
-* npm i
-* npm run dev
+* npm i  --> instala dependencias
+* npm run dev --> Corre el projecto
 
 # Codigo subido a AWS 
 
