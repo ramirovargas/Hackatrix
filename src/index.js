@@ -29,7 +29,7 @@ app.set('view engine', '.hbs');
 
 // Middlewares
 app.use(morgan('dev'));
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(session({
@@ -57,7 +57,8 @@ app.use(require('./routes/authentication'));
 app.use('/agro', require('./routes/agro'));
 
 // Public
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'));
 
 // Starting
 app.listen(app.get('port'), () => {
