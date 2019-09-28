@@ -87,7 +87,7 @@ router.post('/edit/:id', async (req, res) => {
 
 router.get('/subasta', async (req, res) => {
 
-    const price = await pool.query('SELECT id, initial_value FROM agro');
+    const price = await pool.query('SELECT id, product_name ,initial_value FROM agro');
     //Obtener id y precio
     res.json({ price });
 });
