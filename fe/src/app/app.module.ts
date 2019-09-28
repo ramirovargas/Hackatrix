@@ -17,16 +17,28 @@ import {
   MatSelectModule,
   MatCardModule,
   MatIconModule,
+  MatListModule,
   MatGridListModule,
   MatChipsModule
 } from '@angular/material';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
+import { ProductListComponent } from './product-list/product-list.component';
+import { SaleComponent } from './sale/sale.component';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+
+const appRoutes: Routes = [
+  { path: '', component: ProductListComponent },
+  { path: 'sale/:id/:name', component: SaleComponent }
+];
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ProductListComponent,SaleComponent],
   imports: [
+    RouterModule.forRoot(
+      appRoutes    ),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -44,10 +56,16 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatGridListModule,
     MatChipsModule,
+    MatListModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase, 'hackatrix-b62b9'), // imports firebase/app needed for everything
+    HttpClientModule, 
+    AngularFireModule.initializeApp(environment.firebase, 'hackatrix-b62b9')
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+
+
+export class AppModule {
+
+}

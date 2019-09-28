@@ -1,0 +1,60 @@
+<div *ngIf="!validName">
+  <mat-toolbar>
+    Digite el nombre del ofertante:
+  </mat-toolbar>
+  <mat-card>
+    <mat-form-field>
+      <input
+        type="string"
+        matInput
+        placeholder="Ofertante"
+        [(ngModel)]="name"
+      />
+    </mat-form-field>
+    <button mat-fab (click)="beginOffer()">
+      <mat-icon>send</mat-icon>
+    </button>
+  </mat-card>
+</div>
+<mat-grid-list cols="2" rowHeight="100px" *ngIf="validName">
+  <mat-grid-tile [colspan]="2" [rowspan]="1">
+    <mat-toolbar>
+      <mat-icon aria-hidden="false" aria-label="Example home icon"
+        >attach_money</mat-icon
+      >
+      <div style="padding: 5px;">
+        Subasta
+      </div>
+      <mat-chip-list *ngFor="let offer of sales | async">
+        <mat-chip>{{ offer.name }}</mat-chip>
+      </mat-chip-list>
+    </mat-toolbar>
+  </mat-grid-tile>
+  <mat-grid-tile
+    *ngFor="let offer of sales | async"
+    [colspan]="2"
+    [rowspan]="1"
+  >
+    <mat-card style="float:left">
+      <div>{{ offer.name }} ha oferdado {{ offer.value }}</div>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="2" [rowspan]="1">
+    <mat-card>
+      <div style="background: yellow">
+        Precio actual de la subasta {{ price | currency }}
+      </div>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field>
+      <input type="number" matInput placeholder="Input" #tender />
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <button mat-fab (click)="makeATender(tender.value)">
+      <mat-icon>send</mat-icon>
+    </button>
+  </mat-grid-tile>
+</mat-grid-list>
