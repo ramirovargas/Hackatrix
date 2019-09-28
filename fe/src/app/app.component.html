@@ -1,0 +1,50 @@
+<router-outlet></router-outlet>
+
+<mat-grid-list cols="2" rowHeight="100px">
+  <mat-grid-tile [colspan]="2" [rowspan]="1">
+    <mat-toolbar>
+      <mat-icon aria-hidden="false" aria-label="Example home icon"
+        >attach_money</mat-icon
+      >
+      <div style="padding: 5px;">        
+        Subasta
+    </div>
+      <mat-chip-list>
+        <mat-chip>Edison</mat-chip>
+        <mat-chip>Angel</mat-chip>
+        <mat-chip>Ramiro</mat-chip>
+      </mat-chip-list>
+    </mat-toolbar>
+  </mat-grid-tile>
+  <mat-grid-tile
+    *ngFor="let offer of sales | async"
+    [colspan]="2"
+    [rowspan]="1"
+  >
+    <mat-card>
+      <div>{{ offer.name }} ha oferdado {{ offer.value }}</div>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="2" [rowspan]="1">
+    <mat-card>
+      <div style="background: yellow">
+        Precio actual de la subasta {{ price | currency }}
+      </div>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field>
+      <input type="string" matInput placeholder="Input" [(ngModel)]="name" />
+    </mat-form-field>
+    <mat-form-field>
+      <input type="number" matInput placeholder="Input" #tender />
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1"> </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <button mat-fab (click)="makeATender(tender.value)">
+      <mat-icon>send</mat-icon>
+    </button>
+  </mat-grid-tile>
+</mat-grid-list>
