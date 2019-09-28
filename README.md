@@ -1,5 +1,6 @@
 # Hackatrix
-### La idea consiste en eliminar los intermediarios entre las operaciones comerciales entre agremiaciones de campesinos y clientes finales como personas naturales, restaurantes , hoteles , clinicas entre otros
+### La idea consiste en eliminar los intermediarios entre las operaciones comerciales entre agremiaciones de campesinos y clientes finales como personas naturales, restaurantes , hoteles , clinicas entre otros.
+## Dandole la posibilidad de subir los productos por medio de SMS integrados con la api de Twilio y la busqueda de imagenes integrados con la api de Google API Images
 ![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/agrtech.png)
 ![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/image.png)
 
@@ -10,7 +11,7 @@
 
 # Codigo subido a AWS 
 
-![alt text](35.162.225.47:8080)
+![](http://35.162.225.47:8080)
 
 Dar click en Sign in
 
