@@ -1,6 +1,6 @@
 <div class="container p-4">
     <div class="row">
-        {{#each events}}
+        {{#each agro}}
         <div class="col-md-3">
             <div class="card text-center">
                 <div class="card-body">
@@ -10,14 +10,14 @@
                         </h3>
                     </a>
                     <p class="m-2">{{categoria}}</p>
-                    <a class="btn btn-success" href="/events/detalle/{{id}}">
-                        List Event
+                    <a class="btn btn-success" href="/agro/detalle/{{id}}">
+                        List Agro
                     </a>
-                    <a class="btn btn-danger" href="/events/delete/{{id}}">
-                        Delete Event
+                    <a class="btn btn-danger" href="/agro/delete/{{id}}">
+                        Delete Agro
                     </a>
-                    <a class="btn btn-secondary" href="/events/edit/{{id}}">
-                        Edit Event
+                    <a class="btn btn-secondary" href="/agro/edit/{{id}}">
+                        Edit Agro
                     </a>
                 </div>
             </div>
@@ -25,8 +25,8 @@
         {{else}}
         <div class="col-md-4 mx-auto">
             <div class="card card-body text-center">
-                <p>There are not events saved yet.</p>
-                <a href="/events/add">Create One!</a>
+                <p>There are not agro saved yet.</p>
+                <a href="/agro/add">Create One!</a>
             </div>
         </div>
         {{/each}}
