@@ -3,7 +3,7 @@
         <div class="row">
             {{#each agro}}
             <div class="col-md-3">
-                <div class="card text-center">
+                <div class="card text-center mb-3">
                     <div class="card-body">
                         {{!-- <a href="{{tipo}}" target="_blank">
                         </a> --}}
@@ -13,7 +13,7 @@
                         <p class="m-2">{{ product_category }}</p>
 
                         <img class="img-thumbnail" src="{{ url_path }}" alt="{{ product_name }}">
-                        <p class="m-2"><strong>Cantidad</strong> {{ quantity }}</p>
+                        <p class="m-2"><strong>Cantidad</strong> {{ quantity }} Kg.</p>
                         <p class="m-2"><strong>Precio Inicial</strong> $ {{ initial_value }}</p>
                         {{!-- <a class="btn btn-success" href="/agro/detalle/{{id}}">
                             List Agro

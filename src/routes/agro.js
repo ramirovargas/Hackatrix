@@ -39,6 +39,7 @@ router.get('/', isLoggedIn, async (req, res) => {
     res.render('agro/list', { agro });
 });
 
+
 router.get('/delete/:id', async (req, res) => {
     const { id } = req.params;
     await pool.query('DELETE FROM agro WHERE ID = ?', [id]);
@@ -82,6 +83,13 @@ router.post('/edit/:id', async (req, res) => {
     await pool.query('UPDATE agro set ? WHERE id = ?', [newLink, id]);
     req.flash('success', 'Link Updated Successfully');
     res.redirect('/agro');
+});
+
+router.get('/subasta', async (req, res) => {
+
+    const price = await pool.query('SELECT id, initial_value FROM agro');
+    //Obtener id y precio
+    res.json({ price });
 });
 
 module.exports = router;
