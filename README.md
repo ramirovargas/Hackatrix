@@ -14,6 +14,14 @@
 
 * Link Aplicacion subida en AWS **http://35.162.225.47:8080**
 
+# Grupo de trabajo
+![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/grupo.jpg)
+
+# Arquitectura de la aplicacion
+![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/arqui.jpg)
+
+# Manual de usuario
+
 Dar click en Sign in
 
 Usuario: ludwing.ra@gmail.com
@@ -36,4 +44,7 @@ El mensaje de texto se dirige a un número de teléfono que se encuentra asociad
 Para probar el sistema se recomienda utilizar servicios de sms gratuito disponibles en internet:
 ![](https://raw.githubusercontent.com/ramirovargas/Hackatrix/sms/doc/smstest.png)
 
+## Proceso de subasta para los precios
+![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/subasta1.png)
+![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/subasta2.png)
 
