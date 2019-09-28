@@ -1,7 +1,7 @@
   
-CREATE DATABASE db_events;
+CREATE DATABASE db_agro;
 
-USE db_events;
+USE db_agro;
 
 -- TABLE USER
 -- all pasword wil be encrypted using SHA1
@@ -25,8 +25,8 @@ INSERT INTO users (id, username, password, fullname)
 
 SELECT * FROM users;
 
--- events TABLE
-CREATE TABLE events (
+-- agro TABLE
+CREATE TABLE agro (
   id INT(11) NOT NULL,
   nombre VARCHAR(150) NOT NULL,
   categoria VARCHAR(255) NOT NULL,
@@ -39,10 +39,10 @@ CREATE TABLE events (
   CONSTRAINT fk_user FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
-ALTER TABLE events
+ALTER TABLE agro
   ADD PRIMARY KEY (id);
 
-ALTER TABLE events
+ALTER TABLE agro
   MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
 
-DESCRIBE events;
+DESCRIBE agro;

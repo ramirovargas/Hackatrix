@@ -54,7 +54,7 @@ app.use((req, res, next) => {
 // Routes
 app.use(require('./routes/index'));
 app.use(require('./routes/authentication'));
-app.use('/events', require('./routes/events'));
+app.use('/agro', require('./routes/agro'));
 
 // Public
 app.use(express.static(path.join(__dirname, 'public')));
