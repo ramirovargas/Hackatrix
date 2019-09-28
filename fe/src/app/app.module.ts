@@ -35,10 +35,9 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ProductListComponent,SaleComponent],
+  declarations: [AppComponent, ProductListComponent, SaleComponent],
   imports: [
-    RouterModule.forRoot(
-      appRoutes    ),
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -58,14 +57,10 @@ const appRoutes: Routes = [
     MatChipsModule,
     MatListModule,
     FormsModule,
-    HttpClientModule, 
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase, 'hackatrix-b62b9')
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
-
-
-export class AppModule {
-
-}
+export class AppModule {}
