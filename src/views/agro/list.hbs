@@ -1,34 +1,40 @@
-<div class="container p-4">
-    <div class="row">
-        {{#each agro}}
-        <div class="col-md-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <a href="{{tipo}}" target="_blank">
+<div class="scroll">
+    <div class="container p-4">
+        <div class="row">
+            {{#each agro}}
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        {{!-- <a href="{{tipo}}" target="_blank">
+                        </a> --}}
                         <h3 class="card-title text-uppercase">
-                            {{nombre}}
+                            {{ product_name }}
                         </h3>
-                    </a>
-                    <p class="m-2">{{categoria}}</p>
-                    <a class="btn btn-success" href="/agro/detalle/{{id}}">
-                        List Agro
-                    </a>
-                    <a class="btn btn-danger" href="/agro/delete/{{id}}">
-                        Delete Agro
-                    </a>
-                    <a class="btn btn-secondary" href="/agro/edit/{{id}}">
-                        Edit Agro
-                    </a>
+                        <p class="m-2">{{ product_category }}</p>
+
+                        <img class="img-thumbnail" src="{{ url_path }}" alt="{{ product_name }}">
+                        <p class="m-2"><strong>Cantidad</strong> {{ quantity }}</p>
+                        <p class="m-2"><strong>Precio Inicial</strong> $ {{ initial_value }}</p>
+                        {{!-- <a class="btn btn-success" href="/agro/detalle/{{id}}">
+                            List Agro
+                        </a>
+                        <a class="btn btn-danger" href="/agro/delete/{{id}}">
+                            Delete Agro
+                        </a>
+                        <a class="btn btn-secondary" href="/agro/edit/{{id}}">
+                            Edit Agro
+                        </a> --}}
+                    </div>
                 </div>
             </div>
-        </div>
-        {{else}}
-        <div class="col-md-4 mx-auto">
-            <div class="card card-body text-center">
-                <p>There are not agro saved yet.</p>
-                <a href="/agro/add">Create One!</a>
+            {{else}}
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body text-center">
+                    <p>There are not agro saved yet.</p>
+                    <a href="/agro/add">Create One!</a>
+                </div>
             </div>
+            {{/each}}
         </div>
-        {{/each}}
     </div>
 </div>
