@@ -8,6 +8,7 @@ const passport = require('passport');
 const flash = require('connect-flash');
 const MySQLStore = require('express-mysql-session')(session);
 const bodyParser = require('body-parser');
+const MessagingResponse = require('twilio').twiml.MessagingResponse;
 
 const { database } = require('./keys');
 
@@ -28,6 +29,7 @@ app.engine('.hbs', exphbs({
 app.set('view engine', '.hbs');
 
 // Middlewares
+app.use(bodyParser({ extended: false }));
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -55,6 +57,7 @@ app.use((req, res, next) => {
 app.use(require('./routes/index'));
 app.use(require('./routes/authentication'));
 app.use('/agro', require('./routes/agro'));
+app.use('/sms', require('./routes/smshandler'));
 
 // Public
 app.use(express.static(path.join(__dirname, 'public')));
