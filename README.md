@@ -31,7 +31,7 @@ Los agricultores pueden enviar sus productos por medio de sms usando una estruct
   
 El mensaje de texto se dirige a un número de teléfono que se encuentra asociado al servidor de Agrotech. Para efecto de pruebas se toma el siguiente número:
   
-  ## +1 2056193140
+  **                                                  +1 2056193140
 ![](https://raw.githubusercontent.com/ramirovargas/Hackatrix/sms/doc/twilionumber.png)
 Para probar el sistema se recomienda utilizar servicios de sms gratuito disponibles en internet:
 ![](https://raw.githubusercontent.com/ramirovargas/Hackatrix/sms/doc/smstest.png)
