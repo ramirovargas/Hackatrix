@@ -8,8 +8,8 @@
 * Angel Gonzalez
 
 
-## La idea consiste en eliminar los intermediarios entre las operaciones comerciales entre agremiaciones de campesinos y clientes finales como personas naturales, restaurantes , hoteles , clinicas entre otros.
-## Dandole la posibilidad de subir los productos por medio de SMS integrados ya que algunos campesinos po la region y recursos no cuentan con los recursos suficientes para tener internet o acceder a una aplicacion, con la api de Twilio y la busqueda de imagenes integrados con la api de Google API Images, el campesino solo tiene que enviar un mensaje de texto el cual va a ser almacenados en un servidor se obtendran datos con la ayuda del api de google y se le mostrara a los usuarios finales para que puedan comprar los productos
+### La idea consiste en eliminar los intermediarios entre las operaciones comerciales entre agremiaciones de campesinos y clientes finales como personas naturales, restaurantes , hoteles , clinicas entre otros.
+### Dándole la posibilidad de subir los productos por medio de SMS integrados ya que algunos campesinos por la región y recursos no cuentan con los recursos suficientes para tener internet o acceder a una aplicación, con la api de Twilio y la búsqueda de imagenes integrados con la api de Google API Images, el campesino solo tiene que enviar un mensaje de texto el cual va a ser almacenado en un servidor se obtendran datos con la ayuda del api de google y se le mostrara a los clientes finales para que puedan comprar los productos.
 ![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/agrtech.png)
 ![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/image.png)
 
