@@ -26,7 +26,9 @@ Password: lud123
 ![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/paso%202.png)
 
 Los agricultores pueden enviar sus productos por medio de sms usando una estructura definida de la siguiente manera:
-# <Nombre del producto>:<Lugar>:<Cantidad (Kg)>:<Precio>:<Fecha de disponibilidad del producto>. 
+
+<Nombre del producto>:<Lugar>:<Cantidad (Kg)>:<Precio>:<Fecha de disponibilidad del producto>
+  
 El mensaje de texto se dirige a un número de teléfono que se encuentra asociado al servidor de Agrotech. Para efecto de pruebas se toma el siguiente número:
   
   ## +1 2056193140
