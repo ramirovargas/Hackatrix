@@ -1,5 +1,6 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+const uuid = require('uuid');
 
 const pool = require('../database');
 const helpers = require('./helpers');
@@ -31,8 +32,10 @@ passport.use('local.signup', new LocalStrategy({
 
   const { fullname } = req.body;
   let newUser = {
+    id: uuid(),
     fullname,
     username,
+    phone,
     password
   };
   newUser.password = await helpers.encryptPassword(password);
