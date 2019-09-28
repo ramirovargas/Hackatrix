@@ -30,7 +30,7 @@ passport.use('local.signup', new LocalStrategy({
   passReqToCallback: true
 }, async (req, username, password, done) => {
 
-  const { fullname } = req.body;
+  const { fullname, phone } = req.body;
   let newUser = {
     id: uuid(),
     fullname,
