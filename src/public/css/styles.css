@@ -1,6 +1,6 @@
 body {
     background: #f5f6fa;
-font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
 
     overflow: hidden;
 }
@@ -25,7 +25,7 @@ font-family: 'Oswald', sans-serif;
     height: 100%;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    background: url('/img/background.jpeg');
+    background: url('/img/backgroung.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
