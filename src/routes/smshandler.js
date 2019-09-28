@@ -16,7 +16,7 @@ router.post('/registraroferta', (req, res) => {
     body = body.split(':');
     pool.query('INSERT INTO agro set id = ?, product_name = ?, product_location = ?, quantity = ?, initial_value = ?, startdate = ?, user_id = ?', [uuid(), body[0], body[1], body[2], body[3], body[4], 'e295b64e-46f8-4e72-92d4-07fe1559822a']);
     //twiml.message('The Robots are coming! Head for the hills!');
-    // 2056193140 - papa:100:30000:2019-05-10#
+    // 2056193140 - papa:paipa:100:30000:2019-05-10#
     // res.writeHead(200, {'Content-Type': 'text/xml'});
     // res.end(twiml.toString());
 });

@@ -8,6 +8,7 @@ const passport = require('passport');
 const flash = require('connect-flash');
 const MySQLStore = require('express-mysql-session')(session);
 const bodyParser = require('body-parser');
+var cors = require('cors');
 const uuid = require('uuid');
 
 const { database } = require('./keys');
@@ -15,6 +16,15 @@ const { database } = require('./keys');
 // Intializations
 const app = express();
 require('./lib/passport');
+
+app.use(cors());
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
+});
 
 // Settings
 app.set('port', process.env.PORT || 8080);
