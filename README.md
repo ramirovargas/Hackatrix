@@ -23,9 +23,6 @@
 
 * Link Aplicacion subida en AWS **http://35.162.225.47:8080**
 
-# Grupo de trabajo
-![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/grupo.jpg)
-
 # Arquitectura de la aplicacion
 ![](https://github.com/ramirovargas/Hackatrix/blob/master/doc/arqui.jpg)
 
