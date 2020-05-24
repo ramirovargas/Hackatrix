@@ -1,7 +1,5 @@
   
-CREATE DATABASE db_agro;
-
-USE db_agro;
+USE sql9342994;
 
 -- TABLE USER
 -- all pasword wil be encrypted using SHA1

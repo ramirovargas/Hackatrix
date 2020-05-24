@@ -22,7 +22,7 @@ router.post('/add', async (req, res) => {
         url_path,
         startdate,
         endate,
-        user_id: 'e295b64e-46f8-4e72-92d4-07fe1559822a'
+        user_id: '2'
     };
     await pool.query('INSERT INTO agro set ?', [newLink]);
     req.flash('success', 'Link Saved Successfully');

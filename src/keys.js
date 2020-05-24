@@ -3,11 +3,11 @@ module.exports = {
 
     database: {
         connectionLimit: 10,
-        host: 'database-1.cqiguf2tujb7.us-west-2.rds.amazonaws.com',
+        host: 'sql9.freemysqlhosting.net',
         port:3306,
-        user: 'admin',
-        password: '12Hat931',
-        database: 'db_agro'
+        user: 'sql9342994',
+        password: 'lREKbzkWTI',
+        database: 'sql9342994'
     }
 
 };
