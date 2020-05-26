@@ -67,6 +67,7 @@ app.use((req, res, next) => {
 app.use(require('./routes/index'));
 app.use(require('./routes/authentication'));
 app.use('/agro', require('./routes/agro'));
+app.use('/metricas', require('./routes/metricas'));
 app.use('/sms', require('./routes/smshandler'));
 
 // Public
